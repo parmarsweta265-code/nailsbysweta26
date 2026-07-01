@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-playfair: "Playfair Display", Georgia, serif;
+    --font-poppins: "Poppins", system-ui, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-white text-charcoal font-poppins;
+  }
+
+  ::selection {
+    @apply bg-roseGoldLight text-white;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-mist;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-roseGoldLight rounded-full;
+  }
+
+  /* Focus visible styles */
+  :focus-visible {
+    @apply outline-none ring-2 ring-roseGold ring-offset-2;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-20 px-4 sm:px-6 lg:px-8;
+  }
+
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .heading-display {
+    @apply font-playfair text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight;
+  }
+
+  .heading-section {
+    @apply font-playfair text-3xl sm:text-4xl font-bold;
+  }
+
+  .heading-card {
+    @apply font-playfair text-xl font-semibold;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-roseGold hover:bg-roseGoldDark text-white font-poppins font-medium
+      px-6 py-3 rounded-full transition-all duration-300 shadow-luxury hover:shadow-luxury-hover
+      hover:-translate-y-0.5 active:translate-y-0 focus-visible:ring-2 focus-visible:ring-roseGold;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 border-2 border-roseGold text-roseGold hover:bg-roseGold
+      hover:text-white font-poppins font-medium px-6 py-3 rounded-full transition-all duration-300
+      hover:-translate-y-0.5 active:translate-y-0;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 text-roseGold hover:text-roseGoldDark font-poppins
+      font-medium transition-colors duration-200;
+  }
+
+  .card-luxury {
+    @apply bg-white rounded-2xl shadow-luxury hover:shadow-luxury-hover transition-all duration-300
+      hover:-translate-y-1 overflow-hidden;
+  }
+
+  .section-label {
+    @apply inline-block text-xs font-poppins font-semibold tracking-[0.2em] uppercase text-roseGold mb-3;
+  }
+
+  .divider-rose {
+    @apply w-12 h-0.5 bg-roseGold mx-auto my-4;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-roseGoldDark via-roseGold to-roseGoldLight;
+  }
+
+  .bg-luxury {
+    background: linear-gradient(135deg, #faf0e6 0%, #f9e4e8 50%, #faf0e6 100%);
+  }
+}

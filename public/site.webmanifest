@@ -1,0 +1,13 @@
+{
+  "name": "Nails by Sweta26",
+  "short_name": "NailsbySweta26",
+  "description": "Premium nail studio in Anand, Gujarat",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF0E6",
+  "theme_color": "#B76E79",
+  "icons": [
+    { "src": "/icons/icon-192.jpg", "sizes": "192x192", "type": "image/jpeg" },
+    { "src": "/icons/icon-512.jpg", "sizes": "512x512", "type": "image/jpeg" }
+  ]
+}
