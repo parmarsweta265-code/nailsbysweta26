@@ -8,6 +8,7 @@ import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { WhyUsSection } from "@/components/sections/WhyUsSection";
 import { InstagramSection } from "@/components/sections/InstagramSection";
 import { ContactSection } from "@/components/sections/ContactSection";
+import { BookingSection } from "@/components/sections/BookingSection";
 import { FloatingButtons } from "@/components/ui/FloatingButtons";
 import { OfferPopup } from "@/components/ui/OfferPopup";
 import { HolidayPopup } from "@/components/ui/HolidayPopup";
@@ -24,6 +25,7 @@ export default function Home() {
         <TestimonialsSection />
         <WhyUsSection />
         <InstagramSection />
+        <BookingSection />
         <ContactSection />
       </main>
       <Footer />
