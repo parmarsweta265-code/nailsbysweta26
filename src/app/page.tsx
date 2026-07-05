@@ -24,8 +24,8 @@ export default function Home() {
         <GallerySection />
         <TestimonialsSection />
         <WhyUsSection />
-        <InstagramSection />
         <BookingSection />
+        <InstagramSection />
         <ContactSection />
       </main>
       <Footer />
